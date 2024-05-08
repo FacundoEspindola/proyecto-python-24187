@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop | Ecommerce web design</title>
+    <link rel="stylesheet" href="../CSS/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Nosifer&family=Style+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-------------------- Header ---------------------->
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="">
+                    <img src="../img/_2def7ab1-8018-4086-98bc-2c16a9109a59.jfif" width="90px"  >
+                </div>
+
+                <div class="container-logo">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <h1 class="logo"><a href="/">Coffee Shop</a></h1>
+                </div>
+
+                <div class="container-user">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="./carrito.html">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </a>
+                    <div class="content-shopping-cart">
+                        <span class="text">Carrito</span>
+                        <span class="number">(0)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar..." />
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <!-------------------- Main ---------------------->
+    <div class="main">
+        <div class="wrapper">
+            <aside>
+                <button id="close-menu" class="close-menu" ><i class="bi bi-x"></i></button>
+                <nav>
+                    <ul class="menu-tienda">
+                        <li>
+                            <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i>Todos los cafe</button>
+                        </li>
+                        <li>
+                            <button id="Selección especial" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Selección especial</button>
+                        </li>
+                        <li>
+                            <button id="Grano" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Grano</button>
+                        </li>
+                        <li>
+                            <button id="Molido" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Molido</button>
+                        </li>
+                        <li>
+                            <button id="Saquitos" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Saquitos</button>
+                        </li>
+                        <li>
+                            <a class="boton-menu boton-carrito" href="./carrito.html">
+                                <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <main>
+                <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+                <div id="contenedor-productos" class="contenedor-productos">
+                    <div class="producto">
+                        <img class="producto-imagen" src="../img/shop/cafe-envasado_cleanup.jpg" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Cafe</h3>
+                            <p class="producto-precio">$1000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="producto-imagen" src="../img/shop/cafe-envasado1.jpg" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Cafe</h3>
+                            <p class="producto-precio">$1000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="producto-imagen" src="../img/shop/cafe-envasado2_cleanup.jpg" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Cafe</h3>
+                            <p class="producto-precio">$1000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="producto-imagen" src="../img/shop/cafe-envasado3_cleanup.jpg" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Cafe</h3>
+                            <p class="producto-precio">$1000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="producto-imagen" src="../img/shop/cafe-envasado5_cleanup.jpg" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Cafe</h3>
+                            <p class="producto-precio">$1000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="producto-imagen" src="../img/shop/cafe-envasado4_cleanup.jpg" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Cafe</h3>
+                            <p class="producto-precio">$1000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="producto-imagen" src="../img/shop/cafe-envasado2_cleanup.jpg" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Cafe</h3>
+                            <p class="producto-precio">$1000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="producto-imagen" src="../img/shop/cafe-envasado3_cleanup.jpg" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Cafe</h3>
+                            <p class="producto-precio">$1000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="producto-imagen" src="../img/shop/cafe-envasado_cleanup.jpg" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Cafe</h3>
+                            <p class="producto-precio">$1000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="producto-imagen" src="../img/shop/cafe-envasado1.jpg" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Cafe</h3>
+                            <p class="producto-precio">$1000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="producto-imagen" src="../img/shop/cafe-envasado2_cleanup.jpg" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Cafe</h3>
+                            <p class="producto-precio">$1000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="producto-imagen" src="../img/shop/cafe-envasado3_cleanup.jpg" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo">Cafe</h3>
+                            <p class="producto-precio">$1000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-------------------- Footer ---------------------->
+    <footer class="footer">
+        <div class="lista-footer">
+            <ul>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./register.html">Registrarse</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <p>All rights reserved 2024 - Coffee Shop &copy;</p>
+    </footer>
+    <script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+</body>
+</html>
