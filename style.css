@@ -355,6 +355,31 @@ header ul li a {
 */
 
 
+/*-General-*/  /*agregado Lucho*/
+/*--------------------------------------------------------------------*/
+
+
+h5 {
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 7px;
+}
+/* -------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+/*--------------------------------------------------------------------*/
+
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* FOOTER */
@@ -371,9 +396,10 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 1.5em;   
+	margin-left: 2em; /*Agregue Lucho*/ 
 }
 
-.lista-footer img {
+/* .lista-footer img {
     width: auto;
 }
 
@@ -390,7 +416,7 @@ footer {
 	transition: background 0.3s ease-in-out;
 	border-radius: 8px;
 	
-}
+} */
 
 .lista-footer img {
     width: auto;
@@ -410,7 +436,7 @@ footer {
     border-radius: 8px;
 }
 
-.lista-footer li a:hover{
+/* .lista-footer li a:hover{
 	background-color: #80471c;
 	border-radius: 8px;
 }
@@ -418,7 +444,7 @@ footer {
 .lista-footer img {
     max-width: 100%; 
     margin-top: 1em;
-}
+} */
 
 .container-footer {
 	display: flex;
@@ -444,10 +470,17 @@ footer {
     margin-top: 1em; 
 }
 
-.p {
+/* .p {
     text-align: center;
     font-size: 1.2em;
     font-weight: 400;
+} */
+
+footer p {    /* cambie Lucho*/
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding-bottom: 1em;
 }
 
 .title-footer {
