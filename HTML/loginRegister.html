@@ -19,82 +19,103 @@
 <!-- main -->
    <!-- Caja login -->
    <div class="container-form register">
-       <!-- Bienvenido -->
-      <div class="informacion">
-        <div class="info-childs">
-            <h2>Bienvenido!!</h2>
-            <p>Para uniter a nuestra comunidad ingresa con tus datos y disfruta de nuestros productos</p>
-            <input type="button" value="Iniciar Seción" id="sign-in">
-            
-        </div>
-      </div>
-      <!-- Crear cuenta -->
-      <div class="form-informacion">
-        <div class="form-informacion-childs">
-            <h2>Registrate!</h2>
-            <div class="icons">
-                <i class='bx bxl-google'></i>
-                <i class='bx bxl-facebook' ></i>
-                <i class='bx bxl-microsoft'></i>
-            
-            </div>
-            <p>o usa tu Email para registarte.</p>
-            <form class="form">
-                <label >
-                    <i class='bx bx-user'></i>
-                    <input type="text" placeholder="Nombre completo">
-                </label>
-                <label >
-                    <i class='bx bx-envelope' ></i>
-                    <input type="email" placeholder="Correo electronico">
-                </label>
-                <label >
-                    <i class='bx bx-lock-alt'></i>
-                    <input type="password" placeholder="Contarseña">
-                </label>
-                <input type="submit" value="Registrarse">
-            </form>
-        </div>
-      </div>
-   </div>
-   <!--segundo-->
-   <div class="container-form login hide">
     <!-- Bienvenido -->
    <div class="informacion">
      <div class="info-childs">
          <h2>Bienvenido!!</h2>
          <p>Para uniter a nuestra comunidad ingresa con tus datos y disfruta de nuestros productos</p>
-         <input type="button" value="Registrarse"   id="sign-up">
+         <input type="button" value="Iniciar Seción" id="sign-in">
          
      </div>
    </div>
-   <!-- iniciar secion -->
+   <!-- Crear cuenta -->
    <div class="form-informacion">
      <div class="form-informacion-childs">
-         <h2>Iniciar Sesión</h2>
+         <h2>Registrate!</h2>
          <div class="icons">
              <i class='bx bxl-google'></i>
              <i class='bx bxl-facebook' ></i>
              <i class='bx bxl-microsoft'></i>
          
          </div>
-         <form class="form">
-             <label >
-                 <i class='bx bx-envelope' ></i>
-                 <input type="email" placeholder="Correo electronico">
-             </label>
-             <label >
-                 <i class='bx bx-lock-alt'></i>
-                 <input type="password" placeholder="Contarseña">
-             </label>
-             <input type="submit" value="iniciar Sesión">
+         <p>o usa tu Email para registarte.</p>
+         <form class="form form-register" novalidate>
+             
+             <div>
+                 <label >
+                     <i class='bx bx-user'></i>
+                     <input type="text" placeholder="Nombre completo" name="userName" id="userName">
+                 </label>
+                 
+             </div>
+             <div>
+                 <label  >
+                     <i class='bx bx-envelope' ></i>
+                     <input type="email" placeholder="Correo electronico" name="userEmail" id="userEmail">
+                 </label>
+                 
+             <div>
+                 <label >
+                     <i class='bx bx-lock-alt'></i>
+                     <input type="password" placeholder="Contarseña" name="userPassword" id="userPassword" >
+                 </label>
+                 
+             </div>
+             <input type="submit" value="Registrarse">
+             <div class="alerta-error">Todos los campos son obligatorios </div>
+             <div class="alerta-exito">Operación exitosa</div>
          </form>
      </div>
    </div>
 </div>
+<!--segundo-->
+<div class="container-form login hide">
+ <!-- Bienvenido -->
+<div class="informacion">
+  <div class="info-childs">
+      <h2>Bienvenido!!</h2>
+      <p>Para uniter a nuestra comunidad ingresa con tus datos y disfruta de nuestros productos</p>
+      <input type="button" value="Registrarse"   id="sign-up">
+      
+  </div>
+</div>
+<!-- iniciar secion -->
+<div class="form-informacion">
+  <div class="form-informacion-childs">
+      <h2>Iniciar Sesión</h2>
+      <div class="icons">
+          <i class='bx bxl-google'></i>
+          <i class='bx bxl-facebook' ></i>
+          <i class='bx bxl-microsoft'></i>
+      
+      </div>
+      <form class="form form-login" novalidate>
+          <div>
+             <label >
+                 <i class='bx bx-envelope' ></i>
+                 <input type="email" placeholder="Correo electronico" name="userEmail" id="userEmail">
+             </label>
+             
+          </div>
+         <div>
+             <label >
+                 <i class='bx bx-lock-alt'></i>
+                 <input type="password" placeholder="Contarseña" name="userPassword" id="userPassword">
+             </label>
+             
+         </div>
+          <input type="submit" value="iniciar Sesión">
+          <div class="alerta-error">Todos los campos son obligatorios</div>
+          <div class="alerta-exito">Operación exitosa</div>
+      </form>
+  </div>
+</div>
+
 
 <!-- footer -->
-    
+ 
 <script src="../Js/loginRegister.js"></script>
+<script src="#"></script>
+<script src="../Js/register.js"></script>
 </body>
 </html>

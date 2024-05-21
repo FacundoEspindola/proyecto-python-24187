@@ -155,3 +155,76 @@ body{
     position: absolute;
     transform: translateY(-300%);
 }
+
+
+/*Alertas!!!*/
+.form div .alerta{
+    width: 290px;
+    text-align: left;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+.form > .alerta-error,
+.form > .alerta-exito{
+    display: none;
+}
+
+.form .alertaError{
+    display: block;
+    background-color: #f66060;
+    padding: 0.5rem 1rem;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+.form .alertaExito {
+    display: block;
+    background-color: #0ca828;
+    padding: 0.5rem 1rem;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.form .error{
+    outline: solid 2px #9d2222;
+}
+
+
+
+
+
+
+
+/*Responsive*/
+@media screen and (max-width:750px) {
+    html{
+        font-size: 12px;
+    }   
+}
+
+@media screen and (max-width:580px) {
+    html{
+        font-size: 15px;
+    }   
+    .container-form {
+        height: auto;
+        flex-direction: column;
+    }
+    .informacion{
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .form-informacion{
+        width: 100%;
+        padding: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+        
+    }
+}
