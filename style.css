@@ -365,7 +365,7 @@ h5 {
     text-align: center;
     padding-top: 7px;
 }
-/* -------------------------------------------------------------- */
+
 h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul{
     margin: 0;
     padding: 0;
@@ -386,10 +386,20 @@ a {
 
 footer {
 	background-color: #c7a17a;
-	padding: 3m 5m;
+	padding: 20px;
 	font-size: 1.2em;
+    position: relative;
 }
 
+footer:before{
+    content: '';
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:#583030;
+}
 .lista-footer {
     display: flex;
     align-items: center;
@@ -446,7 +456,7 @@ footer {
     margin-top: 1em;
 } */
 
-.container-footer {
+/* .container-footer {
 	display: flex;
 	flex-direction: column;
 	gap: 4rem;
@@ -458,7 +468,7 @@ footer {
 	grid-template-columns: repeat(3, 1fr) 30rem;
 	gap: 3rem;
 	justify-items: center;
-}
+} */
 
 .lista-footer li a:hover{
 	background-color: #80471c;
@@ -489,11 +499,59 @@ footer p {    /* cambie Lucho*/
 	text-transform: uppercase;
 }
 
+.footer .redes-footer{
+    display: flex;
+    justify-content: center;
+}
+.footer .fa-brands{
+    font-size: 25px;
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-brands {
+    color: #000000;
+    margin: 10px;
+}
+.fa-google:hover {
+    color: #DB4A39;
+}
+.fa-instagram:hover {
+    color: #dd45aa;
+}
+.fa-pinterest:hover {
+    color: #ff0000;
+}
+.fa-whatsapp:hover {
+    color: #0ab835;
+}
+
 /* /////// MEDIA QUERIES /////// */
 
+@media screen and (max-width:1225px) {
+    .navbar {
+        margin: auto;
+        margin-left:1rem ;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .lista-footer {
         justify-content: center; 
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    
+    .container-logo{
+        display: none;
+    }
+
+    .menu a {
+        font-size: 1rem;
     }
 }

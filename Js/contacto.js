@@ -6,10 +6,12 @@ document.addEventListener("DOMContentLoaded", function() {
     form.addEventListener("submit", function(event) {
         let nombreInput = form.querySelector('input[name="nombre"]');
         let emailInput = form.querySelector('input[name="email"]');
+        let asuntoTextarea = form.querySelector('textarea[name="asunto"]');
         let consultaTextarea = form.querySelector('textarea[name="consulta"]');
         
         const nombreApellido = nombreInput.value.trim();
         const email = emailInput.value.trim();
+        const asunto = asuntoTextarea.value.trim();
         const consulta = consultaTextarea.value.trim();
         
         if (!/^[A-ZÁÉÍÓÚÜÑa-záéíóúüñ\s]+$/.test(nombreApellido)) {
@@ -24,7 +26,13 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
         
-        if (consulta === "" || consulta.length < 50 || /[\W\d_]+/.test(consulta)) {
+        if (asunto === "" || asunto.length < 5) {
+            alert("Por favor, realiza tu asunto con al menos 5 caracteres.");
+            event.preventDefault();
+            return;
+        }
+
+        if (consulta === "" || consulta.length < 50) {
             alert("Por favor, realiza tu consulta con al menos 50 caracteres.");
             event.preventDefault();
             return;

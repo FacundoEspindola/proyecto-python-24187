@@ -93,7 +93,7 @@ function vaciarCarrito(){
         focusConfirm: false,
         confirmButtonText: `Si`,
         cancelButtonText: `No `,
-    confirmButtonColor: "#DD6B55",
+    confirmButtonColor: "#9d2222",
     
     }).then((result) => {
         if (result.isConfirmed) {

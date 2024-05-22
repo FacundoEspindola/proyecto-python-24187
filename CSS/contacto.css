@@ -311,6 +311,7 @@ article h3{
     margin-top: 20px;
     font-weight: 500;
     font-size: 40px;
+    text-align: center;
 }
 article p{
     margin-top: 20px;
@@ -343,12 +344,20 @@ article p, section p {
 .section {
     width: 1200px;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
 }
 .section div {
     margin-bottom: 10px;
+}
+.section article hr {
+    width: 100%;
+    height: 4px;
+    border: none;
+    background: #583030;
+    margin-top: 30px;
 }
 section{
     width: 100%;
@@ -439,8 +448,19 @@ section input{
 
 footer {
 	background-color: #c7a17a;
-	padding: 3m 5m;
+	padding: 20px;
 	font-size: 1.2em;
+    position: relative;
+}
+
+footer:before{
+    content: '';
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:#583030;
 }
 
 .lista-footer {
@@ -506,9 +526,38 @@ footer p {
 	text-transform: uppercase;
 }
 
+.footer .redes-footer{
+    display: flex;
+    justify-content: center;
+}
+.footer .fa-brands{
+    font-size: 25px;
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-brands {
+    color: #000000;
+    margin: 10px;
+}
+.fa-google:hover {
+    color: #DB4A39;
+}
+.fa-instagram:hover {
+    color: #dd45aa;
+}
+.fa-pinterest:hover {
+    color: #ff0000;
+}
+.fa-whatsapp:hover {
+    color: #0ab835;
+}
 /* /////// MEDIA QUERIES /////// */
 
-@media screen and (max-width:1020px){
+@media screen and (max-width:1225px){
     .navbar {
         margin: auto;
         margin-left:1rem ;
