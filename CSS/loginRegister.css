@@ -31,7 +31,7 @@ body{
     display: flex;
     align-self: center;
     text-align: center;
-    background-color: #c7eef3;
+    background-color: #c7a17a;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -54,15 +54,15 @@ body{
 .info-childs input{
     background-color: transparent;
     outline: none;
-    border: solid 2px #9191bd;
+    border: solid 2px #583030;
     border-radius: 20px;
     padding: 10px 20px;
-    color: #9191bd;
+    color: #fff;
     cursor: pointer;
     transition: background-color .3s ease;
 }
 .info-childs input:hover{
-    background-color: #9191bd;
+    background-color: #583030;
     border: none;
     color: #fff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, .1);
@@ -100,13 +100,13 @@ body{
     padding: 15px;
     cursor: pointer;
     margin: 0 10px;
-    color: #9191bd;
-    border: solid thin #9191bd;
+    color: #c7a17a;
+    border: solid thin #c7a17a;
     transition: background-color 0.3s ease;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, .1);
 }
 .icons i:hover{
-    background-color: #c7c7f3;
+    background-color: #c7a17a;
     color: #fff;
 }
 .form {
@@ -134,7 +134,7 @@ body{
     color: #a7a7a7;
 }
 .form input[type="submit"]{
-    background-color: #9191bd;
+    background-color: #c7a17a;
     color: #fff;
     border-radius: 20px;
     border: none;
@@ -144,7 +144,7 @@ body{
     box-shadow: 0px 2px 5px rgba(0, 0, 0, .1);
 }
 .form input[type="submit"]:hover{
-    background-color: #7a7a9a;
+    background-color: #c7a17a;
 }
 /* Cambio formulario*/
 /*.hide{
@@ -165,8 +165,8 @@ body{
     margin-bottom: 10px;
     font-size: 0.8rem;
 }
-.form > .alerta-error,
-.form > .alerta-exito{
+.form  .alerta-error,
+.form  .alerta-exito{
     display: none;
 }
 
@@ -190,7 +190,32 @@ body{
 .form .error{
     outline: solid 2px #9d2222;
 }
-
+/*Boton Volver*/
+.volver{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 18px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(57, 6, 6);
+    line-height: 100px;
+    border-radius: 50%;
+    background-color: #bf9b9b;
+    bottom: 50%;
+    animation-duration: 2s;
+    animation-name: volver;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes volver{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 
 
@@ -198,6 +223,15 @@ body{
 
 
 /*Responsive*/
+@media screen and (max-width:1150px) {
+    html{
+        font-size: 12px;
+    }  
+    .volver{
+        position: fixed;
+        top: 0%;
+    } 
+}
 @media screen and (max-width:750px) {
     html{
         font-size: 12px;
@@ -212,6 +246,8 @@ body{
         height: auto;
         flex-direction: column;
     }
+   
+    
     .informacion{
         width: 100%;
         padding: 20px;
