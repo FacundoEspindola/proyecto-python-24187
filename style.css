@@ -35,6 +35,10 @@ html {
 	background-color: var(--background-color);
 }
 
+.container-hero img{
+	width: 90px;
+}
+
 .hero {
 	display: flex;
 	justify-content: space-between;
